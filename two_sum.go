@@ -4,7 +4,6 @@ import (
 	"fmt"
 )
 
-// twoSum returns indices of the two numbers such that they add up to target.
 func twoSum(nums []int, target int) []int {
 	numMap := make(map[int]int)
 	for i, num := range nums {
@@ -14,7 +13,7 @@ func twoSum(nums []int, target int) []int {
 		}
 		numMap[num] = i
 	}
-	return nil // In case no solution is found, though problem states there is exactly one.
+	return nil 
 }
 
 func main() {
